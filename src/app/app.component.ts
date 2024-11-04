@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ExampleComponent } from './ui/organisms/example/example.component';
-import { FormComponent } from "./ui/templates/form/form/form.component";
+import { ContainerComponent } from './ui/templates/container/container.component';
+import { NavbarComponent } from './ui/organisms/navbar/navbar.component';
+import { FooterComponent } from './ui/organisms/footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ExampleComponent, FormComponent],
+  imports: [RouterOutlet, ExampleComponent, ContainerComponent, NavbarComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

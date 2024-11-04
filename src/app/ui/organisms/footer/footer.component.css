@@ -1,3 +1,9 @@
-:host {
-  display: block;
+.footer{
+  background-color: #059b9a;
+  padding: 1.5rem 0;
+  margin-top: 30rem;
+}
+
+.footer p{
+  text-align: center;
 }
