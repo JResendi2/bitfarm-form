@@ -1,1 +1,5 @@
-<input type="{{type}}">
+<input
+[value]="value"
+type="{{type}}"
+(input)="handleInput($event)"
+>

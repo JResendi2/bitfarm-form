@@ -1,7 +1,19 @@
-<form class="form" (ngSubmit)="onSubmit()" novalidate [formGroup]="myFormControl">
+<form class="form" [formGroup]="myFormControl" (ngSubmit)="onSubmit()">
 
-  <app-label-input formControlName="name" title="Nombre:" type="text"></app-label-input>
-  <app-label-input title="Edad:" type="number"></app-label-input>
+  <!-- <app-label-input  [control]="myFormControl.get('name')" title="Nombre:" type="text"></app-label-input> -->
+  <!-- <app-label-input title="Edad:" type="number"></app-label-input> -->
+
+  <div class="input">
+    <app-label title="Nombre:"></app-label>
+    <app-input-string type="text" formControlName="name"></app-input-string>
+  </div>
+
+  <div class="input">
+    <app-label title="Edad:"></app-label>
+    <app-input-string type="number" formControlName="name"></app-input-string>
+  </div>
+
+  <!-- <app-input ></app-input> -->
 
   <div class="container-submit">
     <app-button>Guardar</app-button>

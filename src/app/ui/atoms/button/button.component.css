@@ -1,3 +1,32 @@
 :host {
   display: block;
 }
+
+.btn{
+  background-color: brown;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-family: Ubuntu, sans-serif;
+  border: none;
+  border-radius: 8px;
+  cursor: none;
+}
+
+.btn-enable{
+  background-color: brown;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-family: Ubuntu, sans-serif;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-enable:hover{
+  cursor: pointer;
+}
+
+.btn-loading{
+  background-color: #6d4444;
+  cursor: none;
+}
